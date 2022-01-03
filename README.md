@@ -5,7 +5,7 @@ CLI application that makes a simple http file server using one command. Made by 
 ###### Install
 
 ```
-go install github.com/yael-castro/serve
+go install github.com/yael-castro/serve@latest
 ```
 
 ###### Usage
