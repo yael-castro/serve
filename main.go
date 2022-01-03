@@ -7,8 +7,8 @@ import (
 )
 
 const (
-	defaultPort = "80"
-	defaultDir  = "./public"
+	defaultPort = "8080"
+	defaultDir  = "./"
 )
 
 func main() {
@@ -21,6 +21,6 @@ func main() {
 
 	http.Handle("/", http.FileServer(http.Dir(dir)))
 
-	log.Printf(`Files in directory "%s" are served at "http://localhost:%s"`, dir, port)
+	log.Printf(`http server is running on "http://localhost:%s" 🐣`, port)
 	log.Fatal(http.ListenAndServe(":"+port, nil))
 }
