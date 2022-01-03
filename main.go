@@ -21,6 +21,6 @@ func main() {
 
 	http.Handle("/", http.FileServer(http.Dir(dir)))
 
-	log.Printf(`http server is running on "http://localhost:%s" 🐣`, dir, port)
+	log.Printf(`http server is running on "http://localhost:%s" 🐣`, port)
 	log.Fatal(http.ListenAndServe(":"+port, nil))
 }
